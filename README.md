@@ -1,37 +1,79 @@
 # SaaS Data Operations & Integration Platform
 
-## Overview
+## 💡 Project Story
 
-This project simulates how customer data moves through a SaaS platform, from onboarding through CRM synchronization and reporting.
+This project simulates a real-world SaaS customer data platform used for onboarding, CRM synchronization, and reporting.
 
-It demonstrates data validation, troubleshooting, incident investigation, and operational workflows commonly performed by SaaS Support Engineers, Technical Operations teams, CRM Analysts, and Implementation Specialists.
+It demonstrates how Support Engineers and Implementation Specialists troubleshoot system issues across multiple layers.
 
-## System Flow
+The focus is on system behavior, debugging, and operational thinking — not just writing queries.
+
+---
+
+## 🔁 System Architecture
 
 User → API → Database → CRM → Dashboard
 
-## Skills Demonstrated
+Each layer represents a potential failure point that requires investigation.
 
-- SQL querying and reporting
+---
+
+## 🎯 Business Problem
+
+In SaaS companies, customer data frequently breaks due to:
+
+- API validation failures
+- CRM sync issues
+- duplicate customer records
+- missing or invalid data
+- reporting mismatches
+
+This project simulates those production issues and demonstrates how they are investigated and resolved.
+
+---
+
+## 🧠 Skills Demonstrated
+
+- SQL querying, joins, and debugging
 - Data quality validation
-- Excel data cleaning
-- API fundamentals and troubleshooting
-- CRM field mapping
-- Incident investigation
+- API troubleshooting concepts
+- CRM field mapping (Salesforce-style)
+- Incident response (SEV1 / SEV2 thinking)
 - Root cause analysis (RCA)
-- Operational documentation
+- Runbook creation
+- Cross-system troubleshooting
 
-## Project Structure
+---
 
-text excel/            Data cleaning and quality checks sql/              Queries, reporting, and validation api/              API requests and troubleshooting crm/              CRM mapping and sync logic incidents/        Example production issues runbooks/         Troubleshooting procedures system_design/    Architecture and data flow 
+## 📁 Project Structure
 
-## Example Scenarios
+- sql → data validation, joins, reporting, debugging
+- excel → data cleaning & quality checks
+- api → API failure simulation
+- crm → field mapping & sync rules
+- incidents → production-style incident reports
+- runbooks → step-by-step troubleshooting guides
+- system_design → SaaS architecture flow
+- dashboards → reporting layer simulation
+- security → authentication & access concepts
 
-- Missing customer email preventing CRM sync
-- Duplicate customer records caused by retry logic
-- API request failures and validation errors
-- Data mapping issues between systems
+---
 
-## Goal
+## 🚨 Example Incidents Simulated
 
-This repository demonstrates practical SaaS operations skills, including customer data management, troubleshooting, incident response, and system reliability across multiple platforms
+- CRM sync failure due to missing email field
+- Duplicate customers caused by retry logic
+- API validation errors (400 responses)
+- Data mismatch between database and CRM
+- Dashboard reporting inconsistencies
+
+---
+
+## 🧾 Key Outcome
+
+This project demonstrates how SaaS systems behave in production and how engineers:
+
+- identify issues
+- isolate failures across system layers
+- resolve incidents
+- prevent recurrence
