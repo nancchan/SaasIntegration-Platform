@@ -1,31 +1,47 @@
-# Roles and Permissions
+# Roles and Permissions (RBAC Model)
 
-## Admin
-
-Permissions:
-
-* Manage users
-* Configure integrations
-* Access all records
+## Overview
+This defines role-based access control (RBAC) for the SaaS system, controlling what users can access across API, CRM, and dashboard layers.
 
 ---
 
-## Manager
+## Roles
 
-Permissions:
-
-* View reports
-* Manage team records
-* Access operational dashboards
+### Admin
+**Permissions:**
+- Manage users
+- Configure integrations
+- Access all records
+- Full system configuration access
 
 ---
 
-## Standard User
+### Manager
+**Permissions:**
+- View reports and analytics
+- Manage team-related records
+- Access operational dashboards
+- Limited administrative visibility
 
-Permissions:
+---
 
-* View assigned customer records
-* Create and update customer data
+### Standard User
+**Permissions:**
+- View assigned customer records only
+- Create and update customer data
+- No access to system configuration or global data
+
+---
+
+## Permissions Matrix
+
+| Feature / Access        | Admin | Manager | Standard User |
+|------------------------|-------|---------|---------------|
+| User Management        | Yes   | No      | No            |
+| CRM Records (All)      | Yes   | Partial | No            |
+| Assigned Records       | Yes   | Yes     | Yes           |
+| Dashboard Access       | Yes   | Yes     | Limited       |
+| System Configuration   | Yes   | No      | No            |
 
 ---
 
@@ -33,28 +49,35 @@ Permissions:
 
 ### User Cannot Access Dashboard
 
-Checks:
-
-1. Verify assigned role
-2. Confirm dashboard permissions
-3. Review access logs
+**Checks:**
+- Verify assigned role
+- Confirm dashboard permissions
+- Review access control logs
 
 ---
 
 ### User Receives 403 Error
 
-Possible Causes:
+**Meaning:**
+User is authenticated but not authorized to access the resource.
 
-* Insufficient permissions
-* Restricted resource access
+**Possible Causes:**
+- Insufficient role permissions
+- Restricted endpoint or resource
+- Missing access policy mapping
 
-Resolution:
-
-* Review role assignment
-* Grant appropriate permissions
+**Resolution:**
+- Review role assignment
+- Update permission mapping
+- Re-test in Postman
 
 ---
 
 ## Principle of Least Privilege
 
-Users should receive only the minimum access required to perform their responsibilities.
+Users are granted only the minimum level of access required to perform their job functions.
+
+This reduces:
+- Security risk
+- Data exposure
+- Accidental system changes
