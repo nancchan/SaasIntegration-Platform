@@ -34,4 +34,4 @@ text excel/            Data cleaning and quality checks sql/              Querie
 
 ## Goal
 
-This repository demonstrates practical SaaS operations skills, including customer data management, troubleshooting, incident response, and system reliability across multiple platforms.
+This repository demonstrates practical SaaS operations skills, including customer data management, troubleshooting, incident response, and system reliability across multiple platforms
