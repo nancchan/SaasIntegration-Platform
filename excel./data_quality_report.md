@@ -1,31 +1,89 @@
-# Customer Data Quality Report (SaaS Onboarding)
+# Customer Data Quality Report
 
-## INCIDENT CONTEXT
-Customer onboarding data issues were detected during ingestion, causing CRM sync failures and reporting inconsistencies.
+## Overview
 
----
+This report documents data quality issues identified in a customer onboarding dataset before CRM import.
 
-## ISSUES IDENTIFIED
-
-- Duplicate customer records due to retry submissions
-- Missing email addresses affecting CRM sync
-- Missing phone numbers impacting support workflows
-- Invalid email formats (e.g. missing '@', spacing errors)
-- Inconsistent company name formatting
+The purpose was to identify issues that could affect customer records, reporting, and CRM usability.
 
 ---
 
-## BUSINESS IMPACT
+# Issues Identified
 
-- CRM created duplicate contacts
-- Sales team received incomplete customer data
-- Dashboard metrics were inconsistent
-- API sync failure rate increased
+## Duplicate Records
+
+Issue:
+
+Some customers appeared more than once in the dataset.
+
+Impact:
+
+- Duplicate customer records
+- Incorrect customer counts
+- Possible CRM duplicates
+
+Resolution:
+
+Reviewed duplicate records and kept the correct customer record.
 
 ---
 
-## DETECTION
+## Invalid Email Formatting
 
-- SQL validation queries flagged invalid/missing emails
-- CRM sync logs showed repeated failures
-- Duplicate anomalies detected in reporting systems
+Issue:
+
+Some email fields contained invalid formatting.
+
+Examples:
+
+- Missing @ symbol
+- Extra spaces
+
+Impact:
+
+- Failed communication attempts
+- Possible CRM validation issues
+
+Resolution:
+
+Validated and corrected email formatting.
+
+---
+
+## Missing Information
+
+Issue:
+
+Some records contained missing phone or email information.
+
+Impact:
+
+- Incomplete customer profiles
+- Reduced data quality
+
+Resolution:
+
+Flagged missing information and updated records when possible.
+
+---
+
+## Inconsistent Formatting
+
+Issue:
+
+Company names and text fields were not consistently formatted.
+
+Impact:
+
+- Reporting inconsistencies
+- Duplicate matching problems
+
+Resolution:
+
+Standardized text formatting.
+
+---
+
+# Final Outcome
+
+The cleaned dataset was prepared for CRM onboarding and further investigation using SQL.
