@@ -2,11 +2,11 @@
 
 ## Project Goal
 
-This project was created to develop and demonstrate the practical skills used by SaaS Support Engineers, Technical Support Engineers, Application Support Analysts, and Implementation Specialists.
+This project was created to develop and demonstrate practical skills used by SaaS Support Engineers, Technical Support Engineers, Application Support Analysts, and Implementation Specialists.
 
 It simulates a customer onboarding workflow by following customer information through data validation, SQL investigation, API testing practice, Salesforce CRM configuration, reporting, and troubleshooting scenarios.
 
-The project combines Excel, SQL, Postman, and Salesforce Administration concepts to demonstrate how support and implementation teams analyze customer data, investigate issues, configure CRM workflows, and understand how information moves between business systems.
+The project combines Excel, SQL, Postman, and Salesforce Administration concepts to demonstrate how support and implementation teams analyze customer data, investigate issues, manage CRM information, and understand how data moves between business systems.
 
 Rather than building a production application, this repository serves as a hands-on portfolio demonstrating customer data management, CRM concepts, API fundamentals, technical troubleshooting, documentation, and support workflows.
 
@@ -24,7 +24,7 @@ SQL Data Investigation
 ↓  
 API Concepts & Testing Practice (Postman)  
 ↓  
-Salesforce CRM Data Mapping & Configuration  
+Salesforce CRM Data Management  
 ↓  
 Salesforce Reports & Dashboards  
 ↓  
@@ -34,135 +34,104 @@ Support Troubleshooting & Documentation
 
 # Project Objectives
 
-This project demonstrates how customer onboarding data can be reviewed, validated, configured, and supported throughout a SaaS workflow.
+This project demonstrates how customer onboarding data can be reviewed, validated, organized, and supported throughout a SaaS workflow.
 
 Key objectives include:
 
 - Cleaning and validating customer data using Excel.
 - Investigating customer records using SQL queries.
 - Practicing REST API concepts and testing workflows using Postman.
-- Mapping customer information to Salesforce CRM objects.
-- Building Salesforce object relationships and understanding CRM data models.
-- Creating Salesforce reports and dashboards for customer data visibility.
-- Practicing Salesforce Administration concepts including Accounts, Contacts, Leads, Custom Objects, Reports, Dashboards, Users, Roles, Permission Sets, and basic Flow automation.
-- Documenting customer onboarding processes and troubleshooting procedures.
-- Creating simulated support scenarios involving data quality issues and CRM synchronization problems.
+- Understanding CRM data structures and Salesforce administration concepts.
+- Mapping customer information into Salesforce.
+- Creating Salesforce reports and dashboards.
+- Documenting customer onboarding processes.
+- Creating simulated support scenarios involving data quality issues and system troubleshooting.
 - Practicing structured investigation and root cause analysis.
+
+---
+
+# Project Components
+
+## Excel Data Validation
+
+Used Excel to practice:
+
+- Data cleaning
+- Duplicate identification
+- Data validation
+- Preparing CSV files for system import
+
+---
+
+## SQL Data Investigation
+
+Used SQL concepts to investigate customer records.
+
+Practiced:
+
+- Filtering customer data
+- Identifying data issues
+- Reviewing records for troubleshooting purposes
+
+---
+
+## API Testing Practice
+
+Used Postman to practice:
+
+- REST API concepts
+- HTTP methods
+- API request structure
+- Response analysis
 
 ---
 
 # Salesforce CRM Administration Project
 
-This section demonstrates Salesforce Administrator skills through a simulated customer data management workflow.
+A Salesforce Administration project was completed to simulate customer data management and reporting workflows.
 
-## Salesforce Configuration Completed
+Salesforce work completed:
 
-### Data Modeling
-
-Created and reviewed Salesforce object relationships using Schema Builder.
-
-Objects configured:
-
-- Contact
-- Property
-- Favorite
-
-Relationships created:
-
-- Favorite → Contact  
-  - Lookup Relationship
-
-- Favorite → Property  
-  - Master-Detail Relationship
-
-Screenshot:
-
-`Salesforce/screenshots/schema_builder.png`
-
----
-
-## Data Import
-
-Imported customer/account data using Salesforce Data Import Wizard.
-
-Completed:
-
-- CSV data preparation
+- Schema Builder
+- Object configuration review
+- Field relationship review
+- Data Import Wizard
 - Field mapping
-- Record import
 - Data verification
+- Reports
+- Dashboards
 
-Screenshots:
+Detailed Salesforce documentation:
 
-- Field Mapping  
-  `Salesforce/screenshots/data_import_mapping.png`
-
-- Import Results  
-  `Salesforce/screenshots/data_import_result.png`
-
----
-
-## Salesforce Reporting
-
-Created Salesforce reports to analyze customer account information.
-
-Report includes:
-
-- Account Name
-- Industry
-- Phone
-
-Screenshot:
-
-`Salesforce/screenshots/report.png`
-
----
-
-## Salesforce Dashboard
-
-Created a Salesforce dashboard using report data.
-
-Dashboard includes:
-
-- Account industry analysis
-- Data visualization using a donut chart
-
-Screenshot:
-
-`Salesforce/screenshots/dashboard.png`
+`Salesforce/README.md`
 
 ---
 
 # Skills Demonstrated
 
-## Salesforce Administration Concepts
+## Salesforce
 
 - Salesforce CRM Fundamentals
-- Object Modeling
 - Schema Builder
-- Custom Object Relationships
-- Lookup Relationships
-- Master-Detail Relationships
+- Object Configuration
+- Field Relationships
 - Data Import Wizard
 - Field Mapping
 - Salesforce Reports
 - Salesforce Dashboards
-- Basic Salesforce Flow Concepts
-- User & Permission Concepts
+- CRM Data Management
 
-## Technical Skills
+## Technical Support Skills
 
 - Customer Onboarding Workflows
-- SQL Data Investigation
 - Data Validation
 - Excel Data Cleaning
+- SQL Investigation
 - REST API Fundamentals
-- Postman API Testing
-- HTTP Methods & Status Codes
-- Data Mapping
-- Technical Troubleshooting
+- Postman Testing
+- Troubleshooting
 - Incident Documentation
-- Root Cause Analysis (RCA)
+- Root Cause Analysis
 - Runbook Documentation
 - Business Process Understanding
 - Cross-System Problem Solving
@@ -187,6 +156,6 @@ Screenshot:
 
 The goal of this repository is to demonstrate the investigative approach used by SaaS support and implementation teams when customer onboarding issues occur.
 
-The project focuses on validating customer data, investigating system behavior, understanding CRM workflows, configuring Salesforce solutions, troubleshooting common issues, and documenting technical findings.
+The project focuses on validating customer data, investigating system behavior, understanding CRM workflows, documenting technical findings, and practicing structured troubleshooting.
 
-This portfolio reflects the practical skills and workflows commonly used in entry-level SaaS Support, Technical Support, Application Support, and Implementation roles.
+This portfolio reflects practical skills commonly used in entry-level SaaS Support, Technical Support, Application Support, and Implementation roles.
